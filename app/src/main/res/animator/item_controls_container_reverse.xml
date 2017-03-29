@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+    <objectAnimator
+        android:propertyName="marginRightVal"
+        android:duration="300"
+        android:valueFrom="10dp"
+        android:valueTo="-60dp"
+        android:valueType="intType" />
+</set>

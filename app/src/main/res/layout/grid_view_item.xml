@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_item_bg">
+    <com.example.developer.taskmanagerv05.LinearLayoutCustom
+        android:id="@+id/item_controls"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="-60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/item_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pencil" />
+        <ImageView
+            android:id="@+id/item_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/close" />
+    </com.example.developer.taskmanagerv05.LinearLayoutCustom>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/item_id"/>
+    <EditText
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:id="@+id/item_text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:inputType="none"
+        android:background="#ffffff"/>
+</RelativeLayout>

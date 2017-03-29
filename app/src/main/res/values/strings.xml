@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TaskManager.v.0.5</string>
+    <string name="login_activity_text_first">Пожалуйста, авторизуйтесь</string>
+    <string name="login_activity_edit_text">Введите имя</string>
+    <string name="hello_text">Привет,</string>
+    <string name="save">Сохранить</string>
+    <string name="add">Добавить</string>
+    <string name="delete">Удалить</string>
+    <string name="enter">Войти</string>
+    <string name="placeholder">Введите название</string>
+    <string name="title_activity_group_task_list">GroupTaskLIst</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

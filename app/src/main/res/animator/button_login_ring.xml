@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <objectAnimator
+        android:propertyName="visibilityVal"
+        android:valueTo="1"
+        android:duration="0"
+        android:valueType="intType"/>
+    <set android:ordering="together">
+        <objectAnimator
+            android:propertyName="marginTopVal"
+            android:valueTo="-60dp"
+            android:valueFrom="60dp"
+            android:duration="500"
+            android:valueType="intType"/>
+        <objectAnimator
+            android:propertyName="opacityVal"
+            android:valueTo="1"
+            android:valueFrom="0"
+            android:duration="500"
+            android:valueType="floatType" />
+    </set>
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:propertyName="rotateVal"
+        android:valueFrom="0"
+        android:valueTo="360"
+        android:valueType="floatType"
+        android:duration="1200"
+        android:repeatCount="3"
+        />
+</set>

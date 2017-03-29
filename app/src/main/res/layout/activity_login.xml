@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_activity"
+    android:background="#808080"
+    >
+    <RelativeLayout
+        android:id="@+id/gradient_login"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/gradient_animate"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#fff">
+            <TextView
+                android:layout_marginTop="60dp"
+                android:text="@string/login_activity_text_first"
+                android:id="@+id/login_textview"
+                style="@style/TextViewLoginActivity"/>
+            <EditText
+                android:hint="@string/login_activity_edit_text"
+                android:id="@+id/login_editview"
+                android:inputType="textPersonName"
+                android:layout_below="@id/login_textview"
+                android:background="@drawable/border_bottom_black"
+                android:textCursorDrawable="@drawable/cursor_black"
+                style="@style/EditTextLoginActivity" />
+            <com.example.developer.taskmanagerv05.ButtonCustom
+                android:layout_below="@+id/login_editview"
+                android:id="@+id/login_button"
+                android:text="@string/enter"
+                style="@style/Button">
+            </com.example.developer.taskmanagerv05.ButtonCustom>
+            <com.example.developer.taskmanagerv05.ImageViewCustom
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:visibility="invisible"
+                android:src="@drawable/ring_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/login_button"
+                android:alpha="0"
+                android:id="@+id/button_login_ring"
+                android:orientation="vertical"/>
+    </RelativeLayout>
+
+</RelativeLayout>
